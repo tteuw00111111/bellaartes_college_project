@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - BellaArtes</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="../assets/js/contact.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>BellaArtes</h1>
+                <p>ARTE EM MADEIRA</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/produtos.html">Produtos</a></li>
+                    <li><a href="../pages/news.html">Novidades</a></li>
+                    <li><a href="../pages/empresa.html">Empresa</a></li>
+                    <li><a href="../pages/contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="contact-main">
+            <section class="contact-intro">
+                <h1>Fale com a gente!</h1>
+                <p>Quer tirar dúvidas ou pedir um orçamento? Estamos prontos pra te atender!</p>
+                <p>Entre em contato pelo <strong>Instagram</strong>, <strong>WhatsApp</strong>, ou pelas plataformas:</p>
+                <p class="platforms">Mercado Livre, Magalu, Shopee, Amazon, Americanas</p>
+                <button id="openContactForm" class="contact-button">Fale Conosco</button>
+            </section>
+            
+            <div class="contact-content">
+                <div class="features-list">
+                    <div class="feature-item">
+                        <span>Orçamento Personalizado</span>
+                        <span class="arrow">›</span>
+                    </div>
+                    <div class="feature-item">
+                        <span>Preços Justos e Competitivos</span>
+                        <span class="arrow">›</span>
+                    </div>
+                    <div class="feature-item">
+                        <span>Atendimento Rápido e Direto</span>
+                        <span class="arrow">›</span>
+                    </div>
+                    <div class="feature-item">
+                        <span>Enviamos para Todo o Brasil</span>
+                        <span class="arrow">›</span>
+                    </div>
+                    <div class="feature-item">
+                        <span>Dúvidas</span>
+                        <span class="arrow">›</span>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-method">
+                        <img src="../imgs/icons/Instagram Original Logo - iconSvg.co.png" alt="Instagram" class="contact-icon">
+                        <span>@BellaArts</span>
+                    </div>
+                    <div class="contact-method">
+                        <img src="../imgs/icons/brand-whatsapp - iconSvg.co.png" alt="WhatsApp" class="contact-icon">
+                        <span>(XX) XXXXX-XXXX</span>
+                    </div>
+                    <div class="contact-method">
+                        <img src="../imgs/icons/email.png" alt="Email" class="contact-icon">
+                        <span>contact@bellaarts</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Envie sua mensagem</h2>
+            
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
